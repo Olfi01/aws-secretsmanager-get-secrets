@@ -1,3 +1,6 @@
+# Disclaimer
+**THIS IS ONLY A TEMPORARY RELEASE AND WILL BE REMOVED ONCE PR [#36](https://github.com/aws-actions/aws-secretsmanager-get-secrets/pull/36) OR [#37](https://github.com/aws-actions/aws-secretsmanager-get-secrets/pull/37) AT THE ORIGINAL REPOSITORY ARE MERGED**
+
 # Use AWS Secrets Manager secrets in GitHub jobs
 ​
 To use a secret in a GitHub job, you can use a GitHub action to retrieve secrets from AWS Secrets Manager and add them as masked Action outputs, accessable from the [`steps` context](https://docs.github.com/en/actions/learn-github-actions/contexts#steps-context) in your GitHub workflow. For more information about GitHub Actions, see [Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) in the *GitHub Docs*.
@@ -31,7 +34,7 @@ To use the action, add a step to your workflow that uses the following syntax.
 ```yaml
 - name: Step name
   id: secret-step-id
-  uses: aws-actions/aws-secretsmanager-get-secrets@v2
+  uses: Olfi01/aws-secretsmanager-get-secrets@v2
   with:
     secret-ids: |
       secretId1
@@ -75,7 +78,7 @@ The following example returns output variables for secrets identified by name an
 ```yaml
 - name: Get secrets by name and by ARN
   id: secrets-step
-  uses: aws-actions/aws-secretsmanager-get-secrets@v2
+  uses: Olfi01/aws-secretsmanager-get-secrets@v2
   with:
     secret-ids: |
       exampleSecretName
@@ -103,7 +106,7 @@ The following example creates output variables for all secrets with names that b
 ​
 ```yaml
 - name: Get Secret Names by Prefix
-  uses: aws-actions/aws-secretsmanager-get-secrets@v1
+  uses: Olfi01/aws-secretsmanager-get-secrets@v1
   with:
     secret-ids: |
       beta*    # Retrieves all secrets that start with 'beta'
@@ -121,7 +124,7 @@ The following example creates output variables by parsing the JSON in the secret
 ​
 ```yaml
 - name: Get Secrets by Name and by ARN
-  uses: aws-actions/aws-secretsmanager-get-secrets@v1
+  uses: Olfi01/aws-secretsmanager-get-secrets@v1
   with:
     secret-ids: |
       test/secret
