@@ -1,5 +1,5 @@
 # Disclaimer
-**THIS IS ONLY A TEMPORARY RELEASE AND WILL BE REMOVED ONCE PR [#36](https://github.com/aws-actions/aws-secretsmanager-get-secrets/pull/36) OR [#37](https://github.com/aws-actions/aws-secretsmanager-get-secrets/pull/37) AT THE ORIGINAL REPOSITORY ARE MERGED**
+**THIS IS ONLY A TEMPORARY RELEASE AND WILL BE REMOVED ONCE PR [#36](https://github.com/aws-actions/aws-secretsmanager-get-secrets/pull/36) OR [#37](https://github.com/aws-actions/aws-secretsmanager-get-secrets/pull/37) AT THE ORIGINAL REPOSITORY ARE MERGED. THERE IS NO GUARANTEE THAT THE SYNTAX OR BEHAVIOR WILL STAY EXACTLY THE SAME ONCE MERGED.**
 
 # Use AWS Secrets Manager secrets in GitHub jobs
 ​
